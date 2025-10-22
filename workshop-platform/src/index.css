@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.formats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .formats-card {
+    background: #fff;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e5e7eb;
+  }
+  
+  .formats-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1rem;
+  }
+  
+  .formats-emoji {
+    font-size: 1.5rem;
+  }
+  
+  .formats-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .formats-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .formats-number {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 9999px;
+    background: #f3e8ff;
+    color: #9333ea;
+    font-weight: 700;
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+  }
+  
+  .formats-item-title {
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #111827;
+    margin: 0;
+  }
+
+  .formats-item-title2 {
+    font-weight: 600;
+    font-size: 0.800rem;
+    color: #111827;
+    margin: 0;
+  }
+
+  .formats-item-desc {
+    font-size: 0.75rem;
+    color: #4b5563;
+    margin: 0.125rem 0 0;
+  }
+
+  /* Smaller, lighter description under each category title */
+  .formats-desc {
+    font-size: 0.75rem; /* 12px */
+    line-height: 1.2;
+    color: #6b7280; /* gray-500 */
+    margin: -0.99rem 0 0.75rem; /* tighten spacing under title */
+  }
+
+    /* BUTTON under each category title */
+    .formats-toggle-btn {
+      font-size: 0.80rem; /* 12px */
+      line-height: 1.2;
+      color: #1b1b1b; /* gray-500 */
+      margin: -0.99rem 0 0.75rem; /* tighten spacing under title */
+    }

@@ -1,0 +1,55 @@
+import React, { useEffect, useRef } from "react";
+import { pdfjs } from "react-pdf";
+
+const PdfThumbnail = ({ file }) => {
+  const canvasRef = useRef(null);
+
+  useEffect(() => {
+    if (!file) return;
+
+    const renderThumbnail = async () => {
+      try {
+        // Convert to valid URL
+        const fileUrl =
+          typeof file === "string"
+            ? file
+            : file instanceof Blob
+            ? URL.createObjectURL(file)
+            : file.url || null;
+
+        if (!fileUrl) return;
+
+        // Load the PDF
+        const loadingTask = pdfjs.getDocument(fileUrl);
+        const pdf = await loadingTask.promise;
+        const page = await pdf.getPage(1);
+
+        // Prepare canvas
+        const canvas = canvasRef.current;
+        const context = canvas.getContext("2d");
+        const viewport = page.getViewport({ scale: 1.2 });
+
+        canvas.width = viewport.width;
+        canvas.height = viewport.height;
+
+        // Render first page
+        await page.render({ canvasContext: context, viewport }).promise;
+
+        // Clean up object URL (if created from file)
+        if (file instanceof Blob) URL.revokeObjectURL(fileUrl);
+      } catch (error) {
+        console.error("PDF thumbnail render error:", error);
+      }
+    };
+
+    renderThumbnail();
+  }, [file]);
+
+  return (
+    <div className="flex items-center justify-center w-full h-full overflow-hidden">
+      <canvas ref={canvasRef} className="object-contain w-full h-auto rounded" />
+    </div>
+  );
+};
+
+export default PdfThumbnail;
