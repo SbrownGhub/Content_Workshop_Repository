@@ -406,7 +406,7 @@ export default function App() {
               <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-4">
                 <span className="text-2xl">🎣</span>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">1. Hook</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">HOOK</h3>
               <p className="text-gray-600 text-sm leading-relaxed hidden sm:block">
                 Grab attention in the first 3 seconds. Make them stop mid-scroll. Pattern interrupt is your best friend. 
                 No hook = no views.
@@ -417,7 +417,7 @@ export default function App() {
               <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
                 <span className="text-2xl">💎</span>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">2. Value</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">VALUE</h3>
               <p className="text-gray-600 text-sm leading-relaxed hidden sm:block">
                 Deliver something useful, entertaining, or emotionally resonant. Answer "why should I care?" immediately. 
                 Value = retention.
@@ -428,7 +428,7 @@ export default function App() {
               <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
                 <span className="text-2xl">🎯</span>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">3. CTA</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">CTA</h3>
               <p className="text-gray-600 text-sm leading-relaxed hidden sm:block">
                 Tell them what to do next. No Call-to-Action = wasted opportunity. Be specific and make it frictionless. 
                 Guide the next step.
@@ -436,8 +436,8 @@ export default function App() {
             </div>
             <p className="flex justify-center sm:hidden">
               </p>
-             <p className="text-center text-sm text-gray-700 leading-relaxed sm:hidden">
-            Rotate Screen <RefreshCw className="inline w-4 h-4 ml-1" />
+             <p className="text-center text-sm text-gray-700 leading-relaxed mt-2 sm:hidden">
+             Rotate Screen <RefreshCw className="inline w-4 h-4 ml-1" />
           </p>
           </div>
           
