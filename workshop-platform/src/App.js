@@ -407,7 +407,7 @@ export default function App() {
                 <span className="text-2xl">🎣</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">1. Hook</h3>
-              <p className="text-gray-600 text-sm leading-relaxed hidden md:block">
+              <p className="text-gray-600 text-sm leading-relaxed hidden sm:block">
                 Grab attention in the first 3 seconds. Make them stop mid-scroll. Pattern interrupt is your best friend. 
                 No hook = no views.
               </p>
@@ -418,7 +418,7 @@ export default function App() {
                 <span className="text-2xl">💎</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">2. Value</h3>
-              <p className="text-gray-600 text-sm leading-relaxed hidden md:block">
+              <p className="text-gray-600 text-sm leading-relaxed hidden sm:block">
                 Deliver something useful, entertaining, or emotionally resonant. Answer "why should I care?" immediately. 
                 Value = retention.
               </p>
@@ -429,14 +429,14 @@ export default function App() {
                 <span className="text-2xl">🎯</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">3. CTA</h3>
-              <p className="text-gray-600 text-sm leading-relaxed hidden md:block">
+              <p className="text-gray-600 text-sm leading-relaxed hidden sm:block">
                 Tell them what to do next. No Call-to-Action = wasted opportunity. Be specific and make it frictionless. 
                 Guide the next step.
               </p>
             </div>
-            <p className="flex justify-center md:hidden">
+            <p className="flex justify-center sm:hidden">
               </p>
-            <p className="text-center text-sm text-gray-700 leading-relaxed md:hidden">
+             <p className="text-center text-sm text-gray-700 leading-relaxed sm:hidden">
             Rotate Screen <RefreshCw className="inline w-4 h-4 ml-1" />
           </p>
           </div>
@@ -479,18 +479,18 @@ export default function App() {
           </div>
         </div>
 
-        <div className="flex items-center justify-center mb-4 md:hidden">
-            <p className="text-center text-sm text-gray-700 leading-relaxed md:hidden">
+        <div className="flex items-center justify-center mb-4 sm:hidden">
+            <p className="text-center text-sm text-gray-700 leading-relaxed sm:hidden">
             Rotate Screen <RefreshCw className="inline w-4 h-4 ml-1" />
           </p>
           </div>
         
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-start">
   {/* Left column */}
   <ContentCategories />
 
   {/* Right column */}
-  <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200 hidden md:flex flex-col overflow-y-auto max-h-[1570px]">
+  <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200 hidden sm:flex flex-col overflow-y-auto max-h-[1570px]">
     <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2 flex-shrink-0">
       <span className="text-2xl">💭</span>
       Ideation Prompts
