@@ -436,8 +436,8 @@ export default function App() {
             </div>
             <p className="flex justify-center sm:hidden">
               </p>
-             <p className="text-center text-sm text-gray-700 leading-relaxed mt-2 sm:hidden">
-             Rotate Screen <RefreshCw className="inline w-4 h-4 ml-1" />
+             <p className="text-center text-sm text-gray-400 justify-center leading-relaxed mt-2 sm:hidden">
+             Rotate Screen <RefreshCw className="inline w-4 h-4" />
           </p>
           </div>
           
@@ -480,7 +480,7 @@ export default function App() {
         </div>
 
         <div className="flex items-center justify-center mb-4 sm:hidden">
-            <p className="text-center text-sm text-gray-700 leading-relaxed sm:hidden">
+            <p className="text-center text-sm text-gray-400 leading-relaxed sm:hidden">
             Rotate Screen <RefreshCw className="inline w-4 h-4 ml-1" />
           </p>
           </div>
